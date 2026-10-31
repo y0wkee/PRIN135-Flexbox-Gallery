@@ -1,0 +1,71 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #56c5d8;
+  background-image: 
+    radial-gradient(circle, #8ce4e9 3px, transparent 4px);
+  background-size: 45px 45px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 35px 20px;
+  background-color: #ffdc35;
+  color: #70421c;
+  border-bottom: 8px solid #e99b36;
+  box-shadow: 0 5px 12px rgba(0, 70, 110, 0.25);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0px #fff3a0;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.35);
+  border: 5px solid #fff4c2;
+  border-radius: 25px;
+}
+
+/* Images */
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 6px solid #fff4c2;
+  box-shadow: 0 6px 12px rgba(0, 65, 100, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.gallery img:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 20px rgba(0, 50, 90, 0.4);
+  border-color: #ffdc35;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
